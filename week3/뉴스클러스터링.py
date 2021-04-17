@@ -74,7 +74,7 @@ def solution(str1, str2):
 
     checkAnd = len(array1 & array2)
     checkOr = len(array1 | array2)
-    if checkOr == 0 or checkAnd == 0:
+    if checkOr == 0:
         answer = 1
     else:
         answer = checkAnd/checkOr
