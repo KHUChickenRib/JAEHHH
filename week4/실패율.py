@@ -16,6 +16,8 @@ def solution(N, stages):
     for i in range(N):
         if total != 0:
             fail[i+1] = count[i]/total
+        else:
+            fail[i+1] = 0
         total -= count[i]
     
     # value값 기준 정렬

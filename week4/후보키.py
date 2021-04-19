@@ -25,33 +25,19 @@ def solution(relation):
 
 
     # 1개씩
-    # for i in range(x):
-    #     temp = set()
-    #     for j in range(min):
-    #         temp.add(relation[j][i])
-    #     if min == len(temp):
-    #         group.append(i)
+    for i in range(x):
+        temp = set()
+        for j in range(min):
+            temp.add(relation[j][i])
+        if min == len(temp):
+            group.append(i)
 
     # 최소성 삭제 1
     # [0, 1, 2, 3, (0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (0, 1, 2), (0, 1, 3), (0, 2, 3), (1, 2, 3)]
     # [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (0, 1, 2), (0, 1, 3), (0, 2, 3), (1, 2, 3)]
-    # for i in range(x):
-    #     arr.remove(i)
+    for i in range(x):
+        arr.remove(i)
         
-    # 최소성 삭제 2
-    # [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (0, 1, 2), (0, 1, 3), (0, 2, 3), (1, 2, 3)]
-    # [(1, 2), (1, 3), (2, 3), (1, 2, 3)]
-    # i = 0
-    # while 1:
-    #     if i >= len(arr):
-    #         break
-    #     if len(group) > 0:
-    #         for j in group:
-    #             if j in arr[i]:
-    #                 arr.remove(arr[i])
-    #                 i -= 1
-    #     i += 1
-    # temp = set()
 
 
     # [1, 2, 3]
