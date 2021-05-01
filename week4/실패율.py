@@ -28,7 +28,7 @@ def solution(N, stages):
         answer.append(i)
 
     return answer
-
+ 
 N = 5
 stages = [2, 1, 2, 6, 2, 4, 3, 3]
 
