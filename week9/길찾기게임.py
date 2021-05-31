@@ -1,3 +1,6 @@
+# 트리깊이 1000제한 풀기위함
+import sys
+
 # class 생성
 # id, x, y(입력), left, right
 class Node:
@@ -44,6 +47,9 @@ def postorder(ans, node):
     ans.append(node.id)
 
 def solution(nodeinfo):
+    # 트리깊이 1000 제약 해제(파이썬 기본 1000)
+    sys.setrecursionlimit(1500)
+    
     size = len(nodeinfo)
     nodelist = []
     for i in range(size):
