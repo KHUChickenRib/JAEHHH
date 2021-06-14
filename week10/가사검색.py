@@ -31,7 +31,6 @@ class Trie:
         return curr.count
 
 def solution(words, queries):
-    a = 'abcd'
     print(a[::-1])
     TriedRoot = [Trie() for _ in range(10000)]
     ReTriedRoot = [Trie() for _ in range(10000)]
@@ -45,6 +44,7 @@ def solution(words, queries):
         if s[0] != '?':
             answer.append(TriedRoot[len(s)-1].search(s))
         else:
+            # o 같은경우
             answer.append(ReTriedRoot[len(s)-1].search(s[::-1]))
     
     return answer
