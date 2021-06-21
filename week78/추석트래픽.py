@@ -1,9 +1,12 @@
 
 def checkcheck(time,li):
     cnt=0
+    # 3602003
     start=time
+    # 3603003
     end=time+1000
     for i in li:
+        # 3604002 > 3602003 and 3602003 < 3603003
         if i[1] >= start and i[0] < end:
             cnt += 1
     return cnt

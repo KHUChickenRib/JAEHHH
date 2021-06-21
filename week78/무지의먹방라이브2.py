@@ -23,7 +23,6 @@ def solution(food_times, k):
         # 첫번째 : 1 * 6 만큼 빠짐
         # 두번째 : 2 * 5 만큼 빠짐
         time += (q[0][0] - pre_food) * length
-        print(time)
         if time > k:
             time -= (q[0][0] - pre_food) * length
             while q:
@@ -34,7 +33,6 @@ def solution(food_times, k):
             flag = False
         else:
             pre_food = heapq.heappop(q)[0]
-    print(answer_rs)
     return answer
 
 food_times = [3,5,1,6,4,3]
